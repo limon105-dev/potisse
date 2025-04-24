@@ -1,6 +1,5 @@
 .cta-section {
-    padding: 250px 0;
-    background-image: url('../images/banner-slider-img.jpg');
+    background-image: url('../images/banner-img1.jpg');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,10 +26,33 @@
     text-transform: uppercase;
 }
 
-.cta-content-btn {
-    margin: 12px 0 0 0;
+.cta-content-text{
+    margin: 10px 0 0 0;
+}
+
+.cta-input-field-wrap {
+    margin: 20px auto 0;
+    max-width: 477px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cta-input-field{
+    width: 100%;
+    height: 40px;
+}
+
+.cta-input-field input {
+    border: 1px solid var(--border-color);
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-input-field-wrap .btn{
+    width: 100%;
 }
 
 @media only screen and (max-width: 575px){

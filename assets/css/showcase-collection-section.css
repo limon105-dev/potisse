@@ -1,0 +1,8 @@
+/* showcase-collection section css start */
+.showcase-collection-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* showcase-collection section css end */

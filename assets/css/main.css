@@ -82,8 +82,8 @@
     --brand-color: #64493F;
     --item-bg: #f3f3f3;
     --section-bg: #f3f3f3;
-    --card-bg: #ededed;
-    --border-color: #d8d8d8;
+    --card-bg: #F5F1F1;
+    --border-color: #000000;
     --border-color2: #242833;
     --text-muted: #777777;
     --btn-color: #fff;
@@ -248,9 +248,9 @@ button {
 }
 
 .btn {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    padding: 15px 30px;
+    padding: 10px 30px;
     transition: ease .3s;
     font-family: var(--paragraph-font);
     text-transform: uppercase;

@@ -1,6 +1,6 @@
 /* category section css start */
-.category-section {
-    padding: 16px;
+.section.category-section {
+    padding-bottom: 0;
 }
 
 .category-items {
