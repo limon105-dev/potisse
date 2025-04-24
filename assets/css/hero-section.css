@@ -1,0 +1,85 @@
+/* banner section css start */
+.hero-section {
+    margin: 110px 0 0 0;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/hero-banner.jpg");
+}
+
+.hero-content-wrapper {
+    height: 800px;
+    position: relative;
+}
+
+.hero-content-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content-overlay .container {
+    height: 100%;
+}
+
+.hero-content-inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    margin: 0 0 60px 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+.slider-banner-overlay .banner-content {
+    width: 52%;
+    margin: 0 0 100px 0;
+}
+
+.hero-content-heading {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.hreo-content-text {
+    color: var(--white);
+    margin: 10px 0 0 0;
+}
+
+.hero-content-btn {
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+/* banner section css end */
+
+@media only screen and (max-width:767px) {
+
+    /* hero section css start */
+    .hero-section {
+        margin: 60px 0 0 0;
+    }
+
+    /* hero section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* banner section css start */
+    .hero-content-wrapper {
+        height: 500px;
+    }
+
+    .hero-content {
+        margin: 0 0 30px 0;
+    }
+    /* banner section css end */
+}

@@ -1,0 +1,37 @@
+.brand-section{
+    padding: 50px 0;
+    background-color: var(--section-bg);
+}
+
+.brand-section .marquee-content-item-img {
+    height: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* brand-slider section css start */
+    .brand-section .marquee-content-item-img {
+        height: 50px;
+    }
+
+    .brand-section {
+        padding: 30px 0;
+        background-color: var(--section-bg);
+    }
+
+    /* brand-slider section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* brand-slider section css start */
+    .brand-section .marquee-content-item-img {
+        height: 25px;
+    }
+
+    .brand-section {
+        padding: 30px 0;
+    }
+
+    /* brand-slider section css end */
+}

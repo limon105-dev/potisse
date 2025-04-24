@@ -1,0 +1,23 @@
+/* privacy section css start */
+.privacy-page-banner{
+    background-image: url("../images/about-banner.jpg");
+}
+
+.privacy-section .article-content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.privacy-section .article-content strong {
+    font-size: 20px;
+}
+/* privacy section css end */
+
+@media only screen and (max-width:767px) {
+
+    /* privacy section css start */
+    .privacy-section .article-content strong {
+        font-size: 20px;
+    }
+    /* privacy section css end */
+}
