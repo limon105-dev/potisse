@@ -187,7 +187,7 @@ p {
 }
 
 .container {
-    max-width: 1360px;
+    max-width: 100%;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -927,11 +927,12 @@ button {
 
 .nav-icons ul {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 .nav-icons.desktop-nav-icons ul {
     justify-content: flex-end;
+    gap: 40px;
 }
 
 .nav-icons ul li span {
@@ -1231,24 +1232,9 @@ button {
     margin: 0 0 20px 0;
 }
 
-.footer-item:first-child {
-    width: 20%;
-}
-
-.footer-item:nth-child(2) {
-    width: 15%;
-}
-
-.footer-item:nth-child(3) {
-    width: 15%;
-}
-
-.footer-item:last-child {
-    width: 26%;
-}
-
-.footer-logo {
-    max-width: 170px;
+.footer-item {
+    width: fit-content;
+    min-width: 170px;
 }
 
 .footer-text {
@@ -1299,7 +1285,7 @@ a.footer-mail {
 .nav-icons.footer-icons ul {
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 20px;
 }
 
 .nav-icons.footer-icons ul li a i,
@@ -1312,20 +1298,20 @@ a.footer-mail {
 }
 
 .copyright-area {
-    padding: 7.5px 0;
-    background-color: var(--item-bg);
+    padding: 20px 0;
+    background-color: var(--brand-color);
 }
 
 .copyright-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 16px;
 }
 
 .copyright-text,
 .copyright-text a {
-    color: var(--brand-color);
+    color: var(--white);
     font-size: 14px;
 }
 
@@ -1357,27 +1343,45 @@ a.footer-mail {
 
     /* footer-section css start */
     .footer-items {
-        gap: 16px;
+        justify-content: center;
+        gap: 20px;
         flex-wrap: wrap;
+        row-gap: 40px;
     }
 
-    .footer-item:first-child {
-        width: 70%;
-        margin: 0 0 5px;
+    .footer-item {
+        min-width: auto;
     }
 
-    .footer-item:nth-child(2) {
-        width: 30%;
+    .footer-item:first-child{
+        order: 2;
+        width: 48%;
+    }
+
+    .footer-item:nth-child(2){
+        order: 3;
+        width: 48%;
     }
 
     .footer-item:nth-child(3) {
-        width: 30%;
+        order: 1;
+        width: 100%;
     }
 
-    .footer-item:last-child {
-        width: 35%;
+    .footer-logo {
+        max-width: 170px;
+        margin: 0 auto;
     }
 
+    .footer-item:nth-child(4){
+        order: 4;
+        width: 48%;
+    }
+
+    .footer-item:nth-child(5){
+        order: 5;
+        width: 48%;
+    }
     /* footer-section css end */
 
 }
@@ -1386,19 +1390,27 @@ a.footer-mail {
 
     /* common css start */
     h1 {
-        font-size: 48px;
+        font-size: 44px;
     }
 
     h2 {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     h3 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 19px;
     }
 
     h6 {
-        font-size: 19px;
+        font-size: 17px;
     }
 
     p {
@@ -1488,22 +1500,6 @@ a.footer-mail {
         padding: 20px 0 0 0;
     }
 
-    .footer-item:first-child {
-        width: 100%;
-    }
-
-    .footer-item:nth-child(2) {
-        width: 18%;
-    }
-
-    .footer-item:nth-child(3) {
-        width: 27%;
-    }
-
-    .footer-item:last-child {
-        width: 36%;
-    }
-
     .footer-item-title {
         margin: 0 0 10px 0;
     }
@@ -1539,8 +1535,16 @@ a.footer-mail {
         font-size: 22px;
     }
 
-    h6 {
+    h4{
+        font-size: 20px;
+    }
+
+    h5{
         font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
     }
 
     .section {
@@ -1648,17 +1652,36 @@ a.footer-mail {
 
     /* common css end */
 
+    /* navbar-section css start */
+    .nav-icons.desktop-nav-icons ul {
+        gap: 16px;
+    }
+    /* navbar-section css end */
+
     /* footer section css start */
+    .footer-items {
+        gap: 16px;
+        row-gap: 24px;
+    }
+
+    .footer-logo {
+        max-width: 70px;
+    }
+
+    .footer-item:first-child {
+        width: 47%;
+    }
+
     .footer-item:nth-child(2) {
         width: 47%;
     }
 
-    .footer-item:nth-child(3) {
-        width: 48%;
+    .footer-item:nth-child(4) {
+        width: 47%;
     }
 
-    .footer-item:last-child {
-        width: 100%;
+    .footer-item:nth-child(5) {
+        width: 47%;
     }
 
     .copyright-content {

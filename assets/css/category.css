@@ -94,6 +94,16 @@
 
 /* category section css end */
 
+@media only screen and (max-width: 992px) {
+
+    /* category section css start */
+    .category-items {
+        gap: 16px;
+    }
+
+    /* category section css end */
+}
+
 @media only screen and (max-width: 767px) {
 
     /* category section css start */
@@ -102,18 +112,13 @@
     }
 
     .category-items {
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-
     .category-item-content-inner {
         margin: 0;
         padding: 6px;
     }
 
-    /* category section css end */
-}
-
-@media only screen and (max-width: 575px) {
-    /* category section css start */
     /* category section css end */
 }

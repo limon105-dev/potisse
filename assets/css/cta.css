@@ -66,5 +66,13 @@
         max-width: 100%;
         padding: 20px 20px;
     }
+
+    .cta-content-text {
+        margin: 5px 0 0 0;
+    }
+
+    .cta-input-field-wrap {
+        margin: 10px auto 0;
+    }
     /* cta section css end */
 }

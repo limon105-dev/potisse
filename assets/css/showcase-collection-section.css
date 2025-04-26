@@ -6,3 +6,20 @@
 }
 
 /* showcase-collection section css end */
+
+@media only screen and (max-width: 992px){
+    /* showcase-collection section css start */
+    .showcase-collection-items {
+        gap: 16px;
+    }
+    /* showcase-collection section css end */
+}
+
+@media only screen and (max-width: 767px){
+    /* showcase-collection section css start */
+    .showcase-collection-items { 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    /* showcase-collection section css end */
+}

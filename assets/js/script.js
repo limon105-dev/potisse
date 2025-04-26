@@ -169,40 +169,6 @@ $(function () {
 });
 // btn js ---
 
-// banner slider js start--
-var swiper = new Swiper(".top-bar-slider", {
-	slidesPerView: 1,
-	loop: true,
-	speed: 1000,
-	autoplay: {
-		delay: 3500,
-		disableOnInteraction: false,
-	}
-});
-// banner slider js end--
-
-// banner slider js start--
-var swiper = new Swiper(".banner-slider", {
-	slidesPerView: 1,
-	grabCursor: true,
-	loop: true,
-	speed: 1000,
-	effect: "fade",
-	autoplay: {
-		delay: 3500,
-		disableOnInteraction: false,
-	},
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	}
-});
-// banner slider js end--
-
 // product-slider js start---
 var swiper = new Swiper(".product-slider-thumb", {
 	direction: 'vertical',
@@ -285,19 +251,15 @@ var swiper = new Swiper(".related-product-slider", {
 });
 // related-product slider js end--
 
-// related-product slider js start--
+// side-cart-product slider js start--
 var swiper = new Swiper(".side-cart-slider", {
 	slidesPerView: 2.2,
 	spaceBetween: 10,
 	grabCursor: true,
-	loop: false,
+	loop: true,
 	speed: 1000,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	}
 });
-// related-product slider js end--
+// side-cart-product slider js end--
 
 // progesss-bar js start--
 const progress = document.querySelector('.progress');

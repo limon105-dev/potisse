@@ -124,7 +124,7 @@
     margin: 0;
     cursor: pointer;
     background-color: transparent;
-    color: var(--btn-color);
+    color: var(--black);
     height: 100%;
     padding: 10px 10px;
     transition: ease .3s;
