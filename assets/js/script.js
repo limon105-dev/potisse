@@ -199,6 +199,7 @@ var swiper = new Swiper(".product-slider-thumb", {
 	}
 });
 var swiper2 = new Swiper(".product-slider", {
+	autoHeight: true,
 	loop: true,
 	spaceBetween: 10,
 	navigation: {

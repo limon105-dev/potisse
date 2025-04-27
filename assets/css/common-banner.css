@@ -1,51 +1,96 @@
 /* common-banner section css start */
-.common-banner {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 110px 0 0 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: color;
+.common-banner-content-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
 
-.collection-page-banner {
-    background-image: url('../images/collection-banner.jpg');
+.common-banner-title-top,
+.common-banner-title-bottom{
+    color: var(--white);
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
-.common-banner-content {
-    padding: 100px 0;
+.common-banner-title-top{
+    top: 70px;
 }
 
-.common-banner-content .section-heading-wrapper {
+.common-banner-title-bottom{
+    bottom: 70px;
+}
+
+.common-banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-color);
+}
+
+.common-banner-content-inner{
+    max-width: 675px;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.common-banner-content-inner-text {
+    color: var(--white);
+    margin: 5px 0 0 0;
+}
+
+.common-banner-content-inner-text:first-child {
     margin: 0;
 }
-
-.common-banner-content .section-heading {
-    color: var(--white);
-}
-
-.common-banner-content .section-heading-text {
-    color: var(--white);
-}
-
-.common-banner .breadcrumb{
-    margin: 10px 0 0 0;
-}
-
 /* common-banner section css end */
 
 @media only screen and (max-width: 767px){
     /* common-banner css start */
-    .common-banner {
-        margin: 58px 0 0 0;
+    .common-banner-title-top, .common-banner-title-bottom {
+        font-size: 20px;
+    }
+
+    .common-banner-title-top {
+        top: 20px;
+    }
+
+    .common-banner-title-bottom {
+        bottom: 20px;
     }
     /* common-banner css end */
 }
 
 @media only screen and (max-width: 575px){
     /* common-banner css start */
+    .common-banner-content-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .common-banner-title-top {
+        top: 0;
+        color: var(--brand-color);
+    }
+
+    .common-banner-img {
+        padding: 40px 0 0 0;
+    }
+
     .common-banner-content {
-        padding: 50px 0;
+        padding: 60px 0 20px 0;
+        position: relative;
+    }
+
+    .common-banner-title-bottom {
+        bottom: auto;
+        top: 20px;
     }
     /* common-banner css end */
 }
