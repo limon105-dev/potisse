@@ -4,15 +4,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Cart</title>
+		<title>Collections2</title>
 		<!-- link css start -->
 		<link rel="stylesheet" href="assets/css/all.min.css">
 		<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="./assets/css/animate.min.css">
-		<link rel="stylesheet" href="./assets/css/breadcrumbs.css">
-		<link rel="stylesheet" href="./assets/css/common-banner.css">
-		<link rel="stylesheet" href="./assets/css/card.css">
+		<link rel="stylesheet" href="./assets/css/common-heading-section.css">
+		<link rel="stylesheet" href="./assets/css/common-banner2.css">
+		<link rel="stylesheet" href="./assets/css/pagination.css">
 		<link rel="stylesheet" href="./assets/css/cart.css">
+		<link rel="stylesheet" href="./assets/css/card.css">
+		<link rel="stylesheet" href="./assets/css/collections.css">
 		<link rel="stylesheet" href="./assets/css/main.css">
 		<!-- link css end -->
 	</head>
@@ -168,134 +170,401 @@
 		</header>
 
 		<main>
-			<!-- cart section start -->
-			<section class="section cart-section">
+			<!-- banner section start -->
+			<section class="common-banner2 stitchery-collection-banner">
 				<div class="container">
-					<div class="section-heading-wrapper">
-						<h2 class="section-heading">shopping bag</h2>
+					<div class="common-banner2-content-wrap">
+						<div class="common-banner2-content">
+							<h2 class="common-banner2-content-title">STITCHERY</h2>
+						</div>
 					</div>
-					<div class="cart-wrapper">
-						<div class="cart-product-items">
-							<div class="cart-product-item">
-								<div class="cart-product-item-img">
-									<img src="./assets/images/collection-img1.jpg" alt="collection-img1.jpg">
-								</div>
-								<div class="cart-product-item-content">
-									<p class="cart-product-item-content-title">
-										POTISSE LOVE KISS POTISSE CHALK</p>
-									<ul>
-										<li>
-											<p>color:</p>
-											<p>black</p>
-										</li>
-										<li>
-											<p>size:</p>
-											<p>large</p>
-										</li>
-										<li>
-											<p>price:</p>
-											<p>€39</p>
-										</li>
-										<li>
-											<p>quantity:</p>
-											<div class="product-quantity">
-												<button type="button" class="quantity-decrease"><i class="fa-solid fa-minus"></i></button>
-												<input type="number" value="1" class="quantity-total">
-												<button type="button" class="quantity-increase"><i class="fa-solid fa-plus"></i></button>
+				</div>
+			</section>
+			<!-- banner section end -->
+
+			<!-- common-heading-section start -->
+			<section class="common-heading-section">
+				<div class="container">
+					<div class="common-heading-wrapper">
+						<h2 class="common-heading-title">COLLECTION</h2>
+						<p class="common-heading-text">"Stitchery expresses its devotion to embroidery through designs that blend tradition and modernity, carefully crafted by local artisans."</p>
+					</div>
+				</div>
+			</section>
+			<!-- common-heading-section end -->
+
+			<!-- collection section start -->
+			<section class="section collection-section">
+				<div class="container">
+					<div class="collection-heading-wrapper">
+						<p class="collection-heading-title">T-SHIRTS</p>
+					</div>
+					<div class="collection-wrapper">
+						<div class="collection-filter">
+							<span class="filter-window-close-btn"></span>
+							<div class="filter-box">
+								<h6 class="filter-sidebar-heading">Filter <span class="filter-close-btn"><i
+											class="fa-solid fa-xmark"></i></span>
+								</h6>
+								<div class="filter-accordion">
+									<div class="filter-accordion-items">
+										<div class="filter-accordion-item active">
+											<div class="item-title-wrapper accordion-toggle-btn">
+												<h6 class="item-title">Availability</h6>
+												<span class="icon">
+													<span class="plus-icon">
+														<i class="fa-solid fa-plus"></i>
+													</span>
+													<span class="minus-icon">
+														<i class="fa-solid fa-minus"></i>
+													</span>
+												</span>
 											</div>
-											<button class="cart-item-remove-btn">remove</button>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="cart-product-item">
-								<div class="cart-product-item-img">
-									<img src="./assets/images/collection-img1.jpg" alt="collection-img1.jpg">
-								</div>
-								<div class="cart-product-item-content">
-									<p class="cart-product-item-content-title">
-										POTISSE LOVE KISS POTISSE CHALK</p>
-									<ul>
-										<li>
-											<p>color:</p>
-											<p>black</p>
-										</li>
-										<li>
-											<p>size:</p>
-											<p>large</p>
-										</li>
-										<li>
-											<p>price:</p>
-											<p>€39</p>
-										</li>
-										<li>
-											<p>quantity:</p>
-											<div class="product-quantity">
-												<button type="button" class="quantity-decrease"><i class="fa-solid fa-minus"></i></button>
-												<input type="number" value="1" class="quantity-total">
-												<button type="button" class="quantity-increase"><i class="fa-solid fa-plus"></i></button>
+											<div class="filter-accordion-item-content">
+												<div class="filter-options-wrapper">
+													<div class="filter-options-heading">
+														<span class="selection-number">2 selected</span>
+														<button class="reset-btn">Reset</button>
+													</div>
+													<div class="filter-options">
+														<div class="filter-option">
+															<input type="checkbox" id="in_stock">
+															<label for="in_stock">In stock</label>
+														</div>
+														<span class="filter-item-number">8</span>
+													</div>
+													<div class="filter-options">
+														<div class="filter-option">
+															<input class="filter-option-input" type="checkbox" id="out_of_stock">
+															<label class="filter-option-label" for="out_of_stock">Out of stock</label>
+														</div>
+														<span class="filter-item-number">5</span>
+													</div>
+												</div>
 											</div>
-											<button class="cart-item-remove-btn">remove</button>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="cart-product-item">
-								<div class="cart-product-item-img">
-									<img src="./assets/images/collection-img1.jpg" alt="collection-img1.jpg">
-								</div>
-								<div class="cart-product-item-content">
-									<p class="cart-product-item-content-title">
-										POTISSE LOVE KISS POTISSE CHALK</p>
-									<ul>
-										<li>
-											<p>color:</p>
-											<p>black</p>
-										</li>
-										<li>
-											<p>size:</p>
-											<p>large</p>
-										</li>
-										<li>
-											<p>price:</p>
-											<p>€39</p>
-										</li>
-										<li>
-											<p>quantity:</p>
-											<div class="product-quantity">
-												<button type="button" class="quantity-decrease"><i class="fa-solid fa-minus"></i></button>
-												<input type="number" value="1" class="quantity-total">
-												<button type="button" class="quantity-increase"><i class="fa-solid fa-plus"></i></button>
+										</div>
+										<div class="filter-accordion-item active">
+											<div class="item-title-wrapper accordion-toggle-btn">
+												<h6 class="item-title">Brand</h6>
+												<span class="icon">
+													<span class="plus-icon">
+														<i class="fa-solid fa-plus"></i>
+													</span>
+													<span class="minus-icon">
+														<i class="fa-solid fa-minus"></i>
+													</span>
+												</span>
 											</div>
-											<button class="cart-item-remove-btn">remove</button>
-										</li>
-									</ul>
+											<div class="filter-accordion-item-content">
+												<div class="filter-options-wrapper">
+													<div class="filter-options-heading">
+														<span class="selection-number">2 selected</span>
+														<button class="reset-btn">Reset</button>
+													</div>
+													<div class="filter-options">
+														<div class="filter-option">
+															<input type="checkbox" id="addies">
+															<label for="addies">Addies</label>
+														</div>
+														<span class="filter-item-number">9</span>
+													</div>
+													<div class="filter-options">
+														<div class="filter-option">
+															<input class="filter-option-input" type="checkbox" id="fastrack">
+															<label class="filter-option-label" for="fastrack">Fastrack</label>
+														</div>
+														<span class="filter-item-number">7</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="filter-accordion-item active">
+											<div class="item-title-wrapper accordion-toggle-btn">
+												<h6 class="item-title">Custom label</h6>
+												<span class="icon">
+													<span class="plus-icon">
+														<i class="fa-solid fa-plus"></i>
+													</span>
+													<span class="minus-icon">
+														<i class="fa-solid fa-minus"></i>
+													</span>
+												</span>
+											</div>
+											<div class="filter-accordion-item-content">
+												<div class="filter-options-wrapper">
+													<div class="filter-options-heading">
+														<span class="selection-number">5 selected</span>
+														<button class="reset-btn">Reset</button>
+													</div>
+													<div class="filter-options">
+														<div class="filter-option">
+															<input type="checkbox" id="new">
+															<label for="new">New</label>
+														</div>
+														<span class="filter-item-number">9</span>
+													</div>
+													<div class="filter-options">
+														<div class="filter-option">
+															<input class="filter-option-input" type="checkbox" id="old">
+															<label class="filter-option-label" for="old">Old</label>
+														</div>
+														<span class="filter-item-number">3</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="cart-order-summary">
-							<div class="cart-order-summary-inner">
-								<table class="order-summary-table">
-									<tbody>
-										<tr>
-											<td>Subtotal</td>
-											<td>€39</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<th>Total</th>
-											<td>€44</td>
-										</tr>
-									</tfoot>
-								</table>
-								<a href="#!" class="btn primary-btn">checkout <span></span></a>
+						<div class="collection-content">
+							<div class="collection-top">
+								<div class="collection-filter-btn">
+									<span class="filter-open-btn"><i class="fa-solid fa-filter"></i>Filter</span>
+								</div>
+								<p class="collection-product-count">7 Items</p>
+							</div>
+							<div class="product-items">
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img1.jpg" alt="collection-img1.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img2.jpg"
+														alt="collection-img2.jpg">
+												</a>
+											</div>
+											<span class="card-badge">
+												New
+											</span>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE LOVE KISS POTISSE 50430 CHALK WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€29</strong></p>
+												<p class="previous-price">€39</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img2.jpg" alt="collection-img2.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img3.jpg"
+														alt="collection-img3.jpg">
+												</a>
+											</div>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE GEOMETRIC & GRAFFITI WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€99</strong></p>
+												<p class="previous-price">€199</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img3.jpg" alt="collection-img3.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img1.jpg"
+														alt="collection-img1.jpg">
+												</a>
+											</div>
+											<span class="card-badge">
+												New
+											</span>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE LOVE KISS POTISSE 50430 CHALK WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€29</strong></p>
+												<p class="previous-price">€49</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img3.jpg" alt="collection-img3.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img1.jpg"
+														alt="collection-img1.jpg">
+												</a>
+											</div>
+											<span class="card-badge">
+												New
+											</span>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE LOVE KISS POTISSE 50430 CHALK WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€29</strong></p>
+												<p class="previous-price">€49</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img2.jpg" alt="collection-img2.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img3.jpg"
+														alt="collection-img3.jpg">
+												</a>
+											</div>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE GEOMETRIC & GRAFFITI WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€99</strong></p>
+												<p class="previous-price">€199</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img1.jpg" alt="collection-img1.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img2.jpg"
+														alt="collection-img2.jpg">
+												</a>
+											</div>
+											<span class="card-badge">
+												New
+											</span>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE LOVE KISS POTISSE 50430 CHALK WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€29</strong></p>
+												<p class="previous-price">€39</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img1.jpg" alt="collection-img1.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img2.jpg"
+														alt="collection-img2.jpg">
+												</a>
+											</div>
+											<span class="card-badge">
+												New
+											</span>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE LOVE KISS POTISSE 50430 CHALK WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€29</strong></p>
+												<p class="previous-price">€39</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-card card_hover">
+										<div class="card-image-wrap">
+											<div class="card-img">
+												<a class="main-img" href="#">
+													<img class="card_img" src="./assets/images/collection-img2.jpg" alt="collection-img2.jpg">
+												</a>
+												<a class="hover-img" href="#">
+													<img class="card_hover_img" src="./assets/images/collection-img3.jpg"
+														alt="collection-img3.jpg">
+												</a>
+											</div>
+											<div class="card-btn">
+												<a href="#" class="btn primary-btn"><i class="fa-solid fa-bag-shopping"></i> add to
+													bag<span></span></a>
+											</div>
+										</div>
+										<div class="card-content">
+											<a href="#" class="card-title">POTISSE GEOMETRIC & GRAFFITI WHITE T-SHIRT</a>
+											<div class="card-price-wrap">
+												<p class="latest-price"><strong>€99</strong></p>
+												<p class="previous-price">€199</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-btn">
+								<div class="pagination">
+									<a href="#"><i class="fa-solid fa-angle-left"></i></a>
+									<a href="#">1</a>
+									<a href="#" class="active">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#"><i class="fa-solid fa-angle-right"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- cart section end -->
+			<!-- collection section end -->
 
 			<!-- cart-sidebar start -->
 			<div class="cart-sidebar">
@@ -541,7 +810,6 @@
 				</div>
 			</div>
 			<!-- cart-sidebar end -->
-
 		</main>
 
 		<!-- footer section start -->
@@ -626,7 +894,6 @@
 		<!-- js link start-->
 		<script src="./assets/js/jquery-3.7.1.min.js"></script>
 		<script src="./assets/js/swiper-bundle.min.js"></script>
-		<script src="./assets/js/jquery.nicescroll.min.js"></script>
 		<script src="./assets/js/wow.min.js"></script>
 		<script src="./assets/js/script.js"></script>
 		<!-- js link end-->

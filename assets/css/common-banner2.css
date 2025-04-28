@@ -1,0 +1,45 @@
+/* common-banner2 section css start */
+.common-banner2 {
+    height: 723px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stitchery-collection-banner {
+    background-image: url("../images/banner-img1.jpg");
+}
+
+.common-banner2-content-wrap {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.common-banner2-content {
+    margin: 60px 0 0 0;
+}
+
+.common-banner2-content-title {
+    color: var(--brand-color);
+}
+
+/* common-banner2 section css end */
+
+@media only screen and (max-width:992px) {
+    /* common-banner2 section css start */
+    .common-banner2 {
+        height: 500px;
+    }
+    /* common-banner2 section css end */
+
+}
+
+@media only screen and (max-width:767px) {
+    /* common-banner2 section css start */
+    .common-banner2 {
+        height: 300px;
+    }
+    /* common-banner2 section css end */
+
+}
