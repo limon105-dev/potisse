@@ -111,6 +111,34 @@ $(document).ready(function () {
 	});
 	// **..product-accordion js end..**
 
+	// size-guide modal js start..
+	$(".size-guide-popup-btn").click(function (event) {
+		event.stopPropagation();
+		$(".size-guide-popup").toggleClass("active");
+		$("body").toggleClass("active");
+	});
+
+	$(".size-guide-modal-close-btn").click(function (event) {
+		event.stopPropagation();
+		$(".size-guide-popup").toggleClass("active");
+		$("body").toggleClass("active");
+	});
+	// size-guide modal js end..
+
+	// product-details modal js start..
+	$(".product-details-popup-btn").click(function (event) {
+		event.stopPropagation();
+		$(".product-details-popup").toggleClass("active");
+		$("body").toggleClass("active");
+	});
+
+	$(".product-details-modal-close-btn").click(function (event) {
+		event.stopPropagation();
+		$(".product-details-popup").toggleClass("active");
+		$("body").toggleClass("active");
+	});
+	// product-details modal js end..
+
 	// **..faq-accordion js start..**
 	$('.faq-accordion-toggle-btn').on('click', function () {
 		$(this).next().slideToggle();
