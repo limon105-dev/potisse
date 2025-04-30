@@ -117,7 +117,7 @@ body.active {
     transition: all ease .7s;
 }
 
-main{
+main {
     margin: 80px 0 0 0;
 }
 
@@ -211,7 +211,7 @@ input,
 textarea,
 select {
     color: var(--paragraph-text-color);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     font-family: var(--paragraph-font);
     outline: none;
@@ -227,7 +227,8 @@ select {
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-    color: var(--text-muted);
+    color: var(--paragraph-text-color);
+    font-size: 12px;
 }
 
 input::-webkit-outer-spin-button,
@@ -599,7 +600,7 @@ button {
     padding: 20px;
 }
 
-.side-cart-progress-bar-area{
+.side-cart-progress-bar-area {
     padding: 20px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -630,7 +631,8 @@ button {
     appearance: none;
     -webkit-appearance: none;
     cursor: default;
-    background-image: url('../images/progress-bar-icon.png');    background-position: center;
+    background-image: url('../images/progress-bar-icon.png');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     cursor: grab;
@@ -662,7 +664,7 @@ button {
     gap: 10px;
 }
 
-.side-cart-product-item-wrapper .cart-product-table tbody tr:first-child td{
+.side-cart-product-item-wrapper .cart-product-table tbody tr:first-child td {
     padding-top: 0;
 }
 
@@ -702,7 +704,7 @@ button {
     height: 124px;
 }
 
-.side-cart-product-content-footer{
+.side-cart-product-content-footer {
     padding: 20px;
     position: absolute;
     left: 0;
@@ -713,31 +715,32 @@ button {
     border-top: 1px solid var(--border-color);
 }
 
-.side-cart-product-price-wrap{
+.side-cart-product-price-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
-.side-cart-product-price-wrap p{
+.side-cart-product-price-wrap p {
     font-weight: 600;
 }
 
-.side-cart-checkout-btn{
+.side-cart-checkout-btn {
     margin: 20px 0 0 0;
     display: flex;
 }
 
-.side-cart-checkout-btn .btn{
+.side-cart-checkout-btn .btn {
     width: 100%;
 }
 
-.side-cart-checkout-text{
+.side-cart-checkout-text {
     margin: 20px 0 0 0;
     text-align: center;
     font-size: 14px;
 }
+
 /* side-cart-product-content css end */
 /* cart-sidebar css end */
 
@@ -858,7 +861,7 @@ button {
     border: none;
 }
 
-.nav-icons.desktop-nav-icons ul li a{
+.nav-icons.desktop-nav-icons ul li a {
     padding: 0;
 }
 
@@ -1361,12 +1364,12 @@ a.footer-mail {
         min-width: auto;
     }
 
-    .footer-item:first-child{
+    .footer-item:first-child {
         order: 2;
         width: 48%;
     }
 
-    .footer-item:nth-child(2){
+    .footer-item:nth-child(2) {
         order: 3;
         width: 48%;
     }
@@ -1381,15 +1384,16 @@ a.footer-mail {
         margin: 0 auto;
     }
 
-    .footer-item:nth-child(4){
+    .footer-item:nth-child(4) {
         order: 4;
         width: 48%;
     }
 
-    .footer-item:nth-child(5){
+    .footer-item:nth-child(5) {
         order: 5;
         width: 48%;
     }
+
     /* footer-section css end */
 
 }
@@ -1547,11 +1551,11 @@ a.footer-mail {
         font-size: 22px;
     }
 
-    h4{
+    h4 {
         font-size: 20px;
     }
 
-    h5{
+    h5 {
         font-size: 18px;
     }
 
@@ -1668,6 +1672,7 @@ a.footer-mail {
     .nav-icons.desktop-nav-icons ul {
         gap: 16px;
     }
+
     /* navbar-section css end */
 
     /* footer section css start */
