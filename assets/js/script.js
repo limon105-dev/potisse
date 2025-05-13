@@ -147,6 +147,22 @@ $(document).ready(function () {
 	});
 	// **..product-accordion js end..**
 
+	// product single section js start...
+	if (window.matchMedia("(min-width: 993px)").matches) {
+		$(".slider-zoom-btn").click(function (event) {
+			event.stopPropagation();
+			$(".product-img-area").addClass('active');
+			$("body").addClass('active');
+		});
+
+		$(".slider-zoom-close-btn").click(function (event) {
+			event.stopPropagation();
+			$(".product-img-area").removeClass('active');
+			$("body").removeClass('active');
+		});
+	}
+	// product single section js end...
+
 })
 
 // btn js ---
@@ -197,48 +213,43 @@ $(function () {
 });
 // btn js ---
 
-// product-slider js start---
-var swiper = new Swiper(".product-slider-thumb", {
+// product-single-slider js start---
+var swiper = new Swiper(".product-single-thumb-slider", {
 	direction: 'vertical',
-	loop: true,
-	spaceBetween: 20,
+	spaceBetween: 10,
 	slidesPerView: 5,
 	freeMode: true,
 	mousewheel: true,
-	breakpoints: {
-		// when window width is >= 320px
-		1: {
-			direction: 'horizontal',
-			spaceBetween: 10,
-			slidesPerView: 4,
-		},
-		// when window width is >= 576px
-		576: {
-			direction: 'horizontal',
-			spaceBetween: 20,
-			slidesPerView: 5,
-		},
-		// when window width is >= 767px
-		768: {
-			direction: 'vertical',
-			spaceBetween: 20,
-			slidesPerView: 5,
-		}
-	}
 });
-var swiper2 = new Swiper(".product-slider", {
-	autoHeight: true,
-	loop: true,
-	spaceBetween: 10,
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
+var swiper2 = new Swiper(".product-single-slider", {
+	direction: 'vertical',
+	mousewheel: true,
+	spaceBetween: 0,
+	zoom: true,
 	thumbs: {
 		swiper: swiper,
 	},
+	breakpoints: {
+		// when window width is >= 1px
+		1: {
+			direction: 'horizontal',
+			mousewheel: false,
+			pagination: {
+				el: ".swiper-pagination",
+				type: "fraction",
+			},
+		},
+		// when window width is >= 993px
+		993: {
+			direction: 'vertical',
+			pagination: {
+				el: "",
+				type: "",
+			},
+		}
+	}
 });
-// product-slider js end---
+// product-single-slider js end---
 
 // related-product slider js start--
 var swiper = new Swiper(".related-product-slider", {
