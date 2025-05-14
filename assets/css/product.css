@@ -84,6 +84,8 @@
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+    font-size: 12px;
+    opacity: 0.8;
 }
 
 .product-img-area:hover {

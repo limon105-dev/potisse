@@ -308,9 +308,6 @@ progress.addEventListener('input', function () {
 })
 // progesss-bar js end--
 
-// content animation--
-new WOW().init();
-
 // modal js start---
 var body = document.querySelector("body");
 var modal = document.querySelector(".masurement-modal");
